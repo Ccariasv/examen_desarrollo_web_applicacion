@@ -1,0 +1,67 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #253448;
+}
+
+header {
+    text-align: center;
+    padding: 28px 15px;
+    background: #315d8a;
+    color: white;
+}
+
+header h1 { margin: 0; }
+header p { margin-bottom: 0; }
+
+nav { background: #223b57; text-align: center; padding: 13px; }
+nav a { color: white; text-decoration: none; margin: 0 15px; }
+nav a:hover { text-decoration: underline; }
+
+main { max-width: 1000px; margin: auto; padding: 25px 15px; min-height: 70vh; }
+section { margin-bottom: 25px; }
+
+.bienvenida, .caja-formulario {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 7px #cbd5e1;
+}
+
+.resumen { display: flex; gap: 18px; flex-wrap: wrap; }
+.tarjeta { flex: 1; min-width: 190px; text-align: center; background: #dceafb; padding: 18px; border-radius: 10px; }
+.tarjeta h3 { font-size: 30px; margin: 0; color: #315d8a; }
+
+.boton, button {
+    display: inline-block; border: 0; border-radius: 5px; padding: 11px 16px;
+    background: #315d8a; color: white; text-decoration: none; cursor: pointer; margin: 5px 5px 0 0;
+}
+.boton-secundario { background: #4f7d51; }
+button:hover, .boton:hover { opacity: .85; }
+
+form { max-width: 650px; }
+label { display: block; font-weight: bold; margin: 12px 0 5px; }
+input, select, textarea { width: 100%; border: 1px solid #9aa8b6; border-radius: 4px; padding: 10px; font-family: Arial, sans-serif; }
+textarea { min-height: 75px; resize: vertical; }
+.dos-campos { display: flex; gap: 15px; }
+.dos-campos div { width: 50%; }
+
+.tabla-contenedor { overflow-x: auto; background: white; border-radius: 8px; }
+table { width: 100%; border-collapse: collapse; }
+th { background: #315d8a; color: white; }
+th, td { padding: 11px; text-align: left; border-bottom: 1px solid #d8dee6; }
+.estado { padding: 5px 8px; border-radius: 10px; font-size: 13px; }
+.disponible { background: #c8ebd2; color: #176330; }
+.mantenimiento { background: #ffe0b0; color: #8a5600; }
+.mensaje { background: #fff3cd; padding: 14px; border-radius: 5px; }
+
+footer { text-align: center; padding: 16px; background: #223b57; color: white; }
+
+@media (max-width: 600px) {
+    nav a { margin: 0 7px; }
+    .dos-campos { display: block; }
+    .dos-campos div { width: 100%; }
+}
